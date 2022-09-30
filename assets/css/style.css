@@ -1,0 +1,209 @@
+/* @font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+html {
+  margin: auto;
+  max-width: 1440px;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  background-color: crimson;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 14rem;
+  color: #263238;
+  background: rgb(25, 211, 109);
+  border-bottom: 1px solid rgb(25, 211, 109);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+nav .nav-brand {
+  font-size: 42pt;
+  font-weight: 712;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family:'poppins';
+  background-color: crimson;
+  border: none;
+  border-radius: 24px;
+
+}
+
+nav .nav-section {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-section ul {
+  list-style: linear-gradient(black);
+}
+
+nav .nav-section ul li {
+  display: inline-block;
+  margin-left: 4rem;
+}
+
+nav .nav-section ul li a {
+  font-size: 2rem;
+  text-decoration: black;
+  color: #000;
+  padding-inline: 30px;
+  padding-block: 5px;
+  background-color: #d65a12;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+nav .nav-brand:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+nav .nav-section ul li a:hover {
+  padding-inline: 17px;
+  padding-block: 5px;
+  background-color: #e0e0e0;
+  border: black;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* End Navbar */
+
+/* Header */
+
+header {
+  display: flex;
+  color: #263238;
+  background: #1fe7c6a8;
+}
+
+header .bagian-satu {
+  flex-basis: 50%;
+  padding: 11%;
+}
+
+header .bagian-satu .text-hello {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+header .bagian-satu p {
+  font-size: 1.5rem;
+}
+
+header .bagian-satu .btn-info {
+  margin-top: 1.5rem;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+header .bagian-satu .btn-info:hover {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+header .bagian-dua {
+  flex-basis: 50%;
+  margin-top: 2%;
+  margin-right: 10%;
+}
+
+/* End Header */
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  nav {
+    padding: 2.4rem 8rem;
+  }
+
+  header .bagian-satu {
+    padding: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 2rem 4rem;
+  }
+
+  nav .nav-section ul li a,
+  header .bagian-satu p,
+  header .bagian-satu .btn-info {
+    font-size: 1.2rem;
+  }
+
+  header .bagian-satu {
+    padding: 10% 6%;
+  }
+
+  header .bagian-satu .text-hello {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .nav-brand {
+    margin: auto;
+  }
+
+  nav .nav-section {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header .bagian-satu {
+    order: 2;
+    text-align: center;
+  }
+
+  header .bagian-dua {
+    order: 1;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  header .bagian-satu .text-hello {
+    font-size: 2.8rem;
+  }
+}
+
+footer{
+  margin-top: auto;
+}
+
+footer .img{
+  width: 25px;
+  height: 50px;
+}
+
+.nav-brand span{
+  color: red;
+
+}
